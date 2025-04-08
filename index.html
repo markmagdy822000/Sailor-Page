@@ -13,22 +13,20 @@
     <h1>SAILOR</h1>
     
     <ul class="nav justify-content-end">
-
         <li class="nav-item ">
           <a class="nav-link text-secondary-emphasis active text-danger" aria-current="page" href="#">Home</a>
         </li>
         
-        <li class="nav-item ">
-                <a class="nav-link text-secondary-emphasis " href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a> 
-                <nav class="nav flex-column dropdown-toggle">
-                    <ul class="dropdown-menu">
-                        <li><a class="nav-link ms-3 my-1 dropdown-item" href="#item-1-1">Team 1</a></li>
-                        <li><a class="nav-link ms-3 my-1 dropdown-item" href="#item-1-2">Team 2</a></li>
-                        <li><a class="nav-link ms-3 my-1 dropdown-item" href="#item-1-2">Team 3</a></li>
-                    </ul>
-                </nav>
-                
-            </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link text-secondary-emphasis dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Team 1</a></li>
+              <li><a class="dropdown-item" href="#">Team 2</a></li>
+              <li><a class="dropdown-item" href="#">Team 3</a></li>
+            </ul>
+          </li>
         <li class="nav-item ">
             <a class="nav-link text-secondary-emphasis" href="#">Services</a>
         </li>
@@ -53,7 +51,9 @@
         
     </ul>
 
-</header>
+    </header>
+
+
 <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html> 
