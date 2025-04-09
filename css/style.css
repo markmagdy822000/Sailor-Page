@@ -86,7 +86,8 @@ div.carousel {
     top: 79px;
   }
   ul {
-    list-style-image: url("../img/check2-circle.svg");
+    /* list-style-image: url("../img/check2-circle.svg"); */
+    list-style: none;
     /* color: red; */
   }
   .myicon {
@@ -94,6 +95,35 @@ div.carousel {
   }
 }
 
+.companies {
+  position: relative;
+  z-index: 1;
+  .row {
+    width: 90%;
+    margin: auto;
+
+    img {
+      margin: 1.5rem auto;
+      width: 70%;
+      filter: grayscale(100%);
+      opacity: 0.5;
+    }
+    img:hover {
+      filter: grayscale(0%) opacity(1);
+      opacity: 0.9;
+      transition: opacity 0.4s;
+    }
+  }
+}
+.companies::before {
+  content: "";
+  opacity: 1;
+  z-index: 0;
+  background-color: #eee;
+  /* opacity: 0.1; */
+  position: absolute;
+  inset: 0;
+}
 @media (max-width: 992px) {
   .container {
     .part2 {
