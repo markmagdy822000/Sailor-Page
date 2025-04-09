@@ -2,6 +2,7 @@ body {
   height: 500vh;
   font-family: "Raleway" sans-serif;
 }
+
 nav {
   height: 10vh;
   position: fixed;
@@ -63,5 +64,41 @@ div.carousel {
   h2 {
     font-size: 48px;
     font-weight: 700;
+  }
+}
+
+.container {
+  margin: 50px auto;
+  width: 90%;
+  font-family: "Roboto" "system-ui";
+  color: #444444;
+
+  .caption {
+    color: color(SRGB 0.266667 0.266667 0.266667 / 0.5);
+  }
+  h2 {
+    color: #556270;
+    margin-bottom: 65px;
+  }
+  .part2 {
+    /* color: red; */
+    position: relative;
+    top: 79px;
+  }
+  ul {
+    list-style-image: url("../img/check2-circle.svg");
+    /* color: red; */
+  }
+  .myicon {
+    fill: red;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    .part2 {
+      position: relative;
+      top: 0px;
+    }
   }
 }
