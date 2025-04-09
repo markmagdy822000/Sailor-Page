@@ -17,6 +17,7 @@ nav {
   }
   .getstarted {
     display: inline-block;
+    position: relative;
   }
 
   .nav-link.active,
@@ -124,6 +125,30 @@ div.carousel {
   position: absolute;
   inset: 0;
 }
+.services-container {
+  /* border: 1px solid black; */
+  margin: 10% auto;
+  width: 90%;
+  color: #444;
+  div {
+    /* padding-top: 2%; */
+    /* width: 35%; */
+    /* margin: 1% auto; */
+    border: 1px solid #aaa;
+  }
+  h3 {
+    position: relative;
+    top: -2.2rem;
+    left: 3.8rem;
+  }
+  p {
+    position: relative;
+    top: -2.2rem;
+    left: 3.8rem;
+    width: 80%;
+  }
+}
+
 @media (max-width: 992px) {
   .container {
     .part2 {
